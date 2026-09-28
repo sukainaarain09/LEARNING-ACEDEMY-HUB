@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AcademyHub — Premium Online Learning. Master In-Demand Skills with Expert-Led Courses.">
+  <meta name="theme-color" content="#0B3D2E">
+  <title>AcademyHub — Learn Skills. Build Your Future.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="header" id="header" role="banner">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo" aria-label="AcademyHub Home">
+      <div class="header__logo-icon" aria-hidden="true">AH</div>
+      <span class="header__logo-text">AcademyHub</span>
+    </a>
+    <nav class="header__nav" aria-label="Main navigation">
+      <div class="header__nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="header__actions">
+        <a href="courses.html" class="btn btn--primary btn--glow">Explore Courses</a>
+      </div>
+    </nav>
+    <button class="header__hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger__line" aria-hidden="true"></span>
+      <span class="hamburger__line" aria-hidden="true"></span>
+      <span class="hamburger__line" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="header__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="courses.html" class="btn btn--primary">Explore Courses</a>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="home">
+  <!-- Decorative background layers -->
+  <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--3" aria-hidden="true"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        New: AI &amp; Data Science courses now available
+      </div>
+      <h1 class="hero__title">
+        Learn Skills.<br>
+        <span class="hero__title-accent">Build Your Future.</span>
+      </h1>
+      <p class="hero__description">
+        Master in-demand skills through expert-led courses. Join 10,000+ learners transforming their careers with flexible, hands-on programs designed for real-world impact.
+      </p>
+      <div class="hero__cta-group">
+        <a href="courses.html" class="btn btn--primary btn--glow">Explore Courses</a>
+        <a href="#features" class="btn btn--ghost">Learn More</a>
+      </div>
+      <div class="hero__trust">
+        <span class="hero__trust-text">Trusted by 10,000+ learners worldwide</span>
+        <div class="hero__trust-stars" aria-label="4.9 out of 5 stars"></div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__mockup" role="img" aria-label="Education platform mockup showing courses and certificates">
+        <div class="mockup__card mockup__card--1" aria-hidden="true">
+          <div class="mockup__card-image" role="img" aria-label="Web Development course"><span>💻</span></div>
+          <div class="mockup__card-body">
+            <span class="mockup__card-tag">Web Dev</span>
+            <h4>Full-Stack Development</h4>
+          </div>
+        </div>
+        <div class="mockup__card mockup__card--2" aria-hidden="true">
+          <div class="mockup__card-image" role="img" aria-label="Data Science course"><span>📊</span></div>
+          <div class="mockup__card-body">
+            <span class="mockup__card-tag">Data Science</span>
+            <h4>Machine Learning</h4>
+          </div>
+        </div>
+        <div class="mockup__card mockup__card--3" aria-hidden="true">
+          <div class="mockup__card-badge"><span>⭐</span> 4.9 Rating</div>
+        </div>
+        <div class="mockup__card mockup__card--4" aria-hidden="true">
+          <div class="mockup__card-badge"><span>🎓</span> Certificate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TRUST / STATS ==================== -->
+<section class="trust" aria-label="Trusted statistics">
+  <div class="container">
+    <div class="trust__strip">
+      <div class="trust__item reveal">
+        <div class="trust__number"><span class="counter" data-target="50">0</span>+</div>
+        <div class="trust__label">Expert-Led Courses</div>
+      </div>
+      <div class="trust__item reveal reveal-delay-1">
+        <div class="trust__number"><span class="counter" data-target="10000">0</span>+</div>
+        <div class="trust__label">Active Learners</div>
+      </div>
+      <div class="trust__item reveal reveal-delay-2">
+        <div class="trust__number"><span class="counter" data-target="25">0</span>+</div>
+        <div class="trust__label">Expert Instructors</div>
+      </div>
+      <div class="trust__item reveal reveal-delay-3">
+        <div class="trust__number"><span class="counter" data-target="95">0</span>%</div>
+        <div class="trust__label">Satisfaction Rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FEATURED COURSES ==================== -->
+<section class="courses" id="features" aria-label="Featured courses">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-header__subtitle">Featured Courses</span>
+      <h2 class="section-header__title">Popular Courses Right Now</h2>
+      <p class="section-header__description">Choose from our curated selection of industry-relevant courses designed by world-class experts.</p>
+    </div>
+    <div class="courses__grid">
+      <article class="course-card reveal">
+        <div class="course-card__image" role="img" aria-label="Web Development course"><span aria-hidden="true">💻</span><span class="course-card__tag">Web Dev</span></div>
+        <div class="course-card__body">
+          <span class="course-card__category">Web Development</span>
+          <h3 class="course-card__title">Complete Full-Stack Development</h3>
+          <p class="course-card__description">Master React, Node.js, databases, and deployment. Build real-world projects from scratch.</p>
+          <div class="course-card__meta"><span class="course-card__meta-item">Beginner</span><span class="course-card__meta-item">40 Hours</span></div>
+          <div class="course-card__footer">
+            <div class="course-card__price">$49 <span>/ course</span></div>
+            <a href="courses.html" class="btn btn--primary btn--sm">View Course</a>
+          </div>
+        </div>
+      </article>
+      <article class="course-card reveal reveal-delay-1">
+        <div class="course-card__image" role="img" aria-label="Data Science course"><span aria-hidden="true">📊</span><span class="course-card__tag">Data Science</span></div>
+        <div class="course-card__body">
+          <span class="course-card__category">Data Science</span>
+          <h3 class="course-card__title">Data Science &amp; Machine Learning</h3>
+          <p class="course-card__description">Learn Python, ML algorithms, and data visualization. Solve real business problems with data.</p>
+          <div class="course-card__meta"><span class="course-card__meta-item">Intermediate</span><span class="course-card__meta-item">60 Hours</span></div>
+          <div class="course-card__footer">
+            <div class="course-card__price">$69 <span>/ course</span></div>
+            <a href="courses.html" class="btn btn--primary btn--sm">View Course</a>
+          </div>
+        </div>
+      </article>
+      <article class="course-card reveal reveal-delay-2">
+        <div class="course-card__image" role="img" aria-label="UI/UX Design course"><span aria-hidden="true">🎨</span><span class="course-card__tag">Design</span></div>
+        <div class="course-card__body">
+          <span class="course-card__category">UI/UX Design</span>
+          <h3 class="course-card__title">UI/UX Design Masterclass</h3>
+          <p class="course-card__description">Create stunning user interfaces using Figma, prototyping, and usability testing techniques.</p>
+          <div class="course-card__meta"><span class="course-card__meta-item">All Levels</span><span class="course-card__meta-item">35 Hours</span></div>
+          <div class="course-card__footer">
+            <div class="course-card__price">$39 <span>/ course</span></div>
+            <a href="courses.html" class="btn btn--primary btn--sm">View Course</a>
+          </div>
+        </div>
+      </article>
+      <article class="course-card reveal reveal-delay-3">
+        <div class="course-card__image" role="img" aria-label="Cybersecurity course"><span aria-hidden="true">🔐</span><span class="course-card__tag">Cybersecurity</span></div>
+        <div class="course-card__body">
+          <span class="course-card__category">Cybersecurity</span>
+          <h3 class="course-card__title">Ethical Hacking &amp; Security</h3>
+          <p class="course-card__description">Learn penetration testing, network security, and vulnerability assessment from industry pros.</p>
+          <div class="course-card__meta"><span class="course-card__meta-item">Advanced</span><span class="course-card__meta-item">50 Hours</span></div>
+          <div class="course-card__footer">
+            <div class="course-card__price">$79 <span>/ course</span></div>
+            <a href="courses.html" class="btn btn--primary btn--sm">View Course</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="courses__cta reveal">
+      <a href="courses.html" class="btn btn--secondary btn--lg">View All Courses</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY CHOOSE US ==================== -->
+<section class="features" id="features-why" aria-label="Why choose us">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-header__subtitle">Why Choose Us</span>
+      <h2 class="section-header__title">What Makes AcademyHub Different</h2>
+      <p class="section-header__description">We combine expert instruction, practical learning, and flexibility to give you the best educational experience possible.</p>
+    </div>
+    <div class="features__grid">
+      <div class="feature-card reveal">
+        <div class="feature-card__icon" aria-hidden="true">👨‍🏫</div>
+        <h3 class="feature-card__title">Expert Instructors</h3>
+        <p class="feature-card__description">Learn from industry professionals with years of real-world experience who bring practical knowledge to every lesson.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card__icon" aria-hidden="true">🛠️</div>
+        <h3 class="feature-card__title">Practical Learning</h3>
+        <p class="feature-card__description">Hands-on projects, real-world case studies, and interactive labs ensure you gain skills you can apply immediately.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card__icon" aria-hidden="true">⏰</div>
+        <h3 class="feature-card__title">Flexible Study</h3>
+        <p class="feature-card__description">Learn at your own pace, anytime, anywhere. Our platform adapts to your schedule with on-demand content.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-card__icon" aria-hidden="true">🏅</div>
+        <h3 class="feature-card__title">Industry Certificates</h3>
+        <p class="feature-card__description">Earn recognized certificates that boost your resume and LinkedIn profile, valued by employers worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LEARNING PROCESS ==================== -->
+<section class="process" id="process" aria-label="How it works">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-header__subtitle">Our Process</span>
+      <h2 class="section-header__title">How Learning Works</h2>
+      <p class="section-header__description">A simple, proven path to success designed for every learner, from beginner to expert.</p>
+    </div>
+    <div class="process__flow">
+      <div class="process__step reveal">
+        <div class="process__step-number" aria-hidden="true">
+          <span class="process__step-icon">🎯</span>
+          <span class="process__step-num">1</span>
+        </div>
+        <h3 class="process__step-title">Choose a Course</h3>
+        <p class="process__step-description">Browse our extensive catalog and select the course that aligns with your goals and interests.</p>
+      </div>
+      <div class="process__connector" aria-hidden="true">
+        <div class="process__connector-line"></div>
+        <div class="process__connector-arrow">→</div>
+      </div>
+      <div class="process__step reveal reveal-delay-1">
+        <div class="process__step-number" aria-hidden="true">
+          <span class="process__step-icon">📚</span>
+          <span class="process__step-num">2</span>
+        </div>
+        <h3 class="process__step-title">Learn</h3>
+        <p class="process__step-description">Watch expert video lectures, read materials, and engage with interactive content at your own pace.</p>
+      </div>
+      <div class="process__connector" aria-hidden="true">
+        <div class="process__connector-line"></div>
+        <div class="process__connector-arrow">→</div>
+      </div>
+      <div class="process__step reveal reveal-delay-2">
+        <div class="process__step-number" aria-hidden="true">
+          <span class="process__step-icon">🔧</span>
+          <span class="process__step-num">3</span>
+        </div>
+        <h3 class="process__step-title">Practice</h3>
+        <p class="process__step-description">Apply what you've learned through hands-on projects, quizzes, and real-world challenges.</p>
+      </div>
+      <div class="process__connector" aria-hidden="true">
+        <div class="process__connector-line"></div>
+        <div class="process__connector-arrow">→</div>
+      </div>
+      <div class="process__step reveal reveal-delay-3">
+        <div class="process__step-number" aria-hidden="true">
+          <span class="process__step-icon">🚀</span>
+          <span class="process__step-num">4</span>
+        </div>
+        <h3 class="process__step-title">Grow</h3>
+        <p class="process__step-description">Earn your certificate, showcase your skills, and advance your career with confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="testimonials" aria-label="Student testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-header__subtitle">Testimonials</span>
+      <h2 class="section-header__title">What Our Students Say</h2>
+      <p class="section-header__description">Hear from thousands of learners who have transformed their careers through AcademyHub.</p>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card__quote" aria-hidden="true">"</div>
+        <div class="testimonial-card__stars" aria-label="5 out of 5 stars"></div>
+        <p class="testimonial-card__text">The Full-Stack course completely changed my career trajectory. I landed a job at a top tech company within 3 months of completing it.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" aria-hidden="true">SK</div>
+          <div>
+            <div class="testimonial-card__name">Sarah Johnson</div>
+            <div class="testimonial-card__role">Full-Stack Developer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-card__quote" aria-hidden="true">"</div>
+        <div class="testimonial-card__stars" aria-label="5 out of 5 stars"></div>
+        <p class="testimonial-card__text">The practical projects were the best part. I built a portfolio that actually impressed hiring managers during my job search.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" aria-hidden="true">MC</div>
+          <div>
+            <div class="testimonial-card__name">Michael Chen</div>
+            <div class="testimonial-card__role">Data Scientist</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-card__quote" aria-hidden="true">"</div>
+        <div class="testimonial-card__stars" aria-label="5 out of 5 stars"></div>
+        <p class="testimonial-card__text">The supportive community and mentorship made all the difference. I went from feeling overwhelmed to confident in my new career.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" aria-hidden="true">ER</div>
+          <div>
+            <div class="testimonial-card__name">Emily Rodriguez</div>
+            <div class="testimonial-card__role">UX Designer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FINAL CTA ==================== -->
+<section class="cta" id="contact" aria-label="Call to action">
+  <div class="cta__inner">
+    <div class="cta__blob cta__blob--1" aria-hidden="true"></div>
+    <div class="cta__blob cta__blob--2" aria-hidden="true"></div>
+    <h2 class="cta__title reveal">Ready to Start Your Journey?</h2>
+    <p class="cta__description reveal reveal-delay-1">Join thousands of students who have transformed their careers with AcademyHub. Your future starts with a single step.</p>
+    <div class="cta__buttons reveal reveal-delay-2">
+      <a href="courses.html" class="btn btn--primary btn--glow">Browse All Courses</a>
+      <a href="contact.html" class="btn btn--light btn--outline">Talk to an Advisor</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo"><div class="footer__logo-icon" aria-hidden="true">AH</div><span>AcademyHub</span></div>
+        <p class="footer__description">Empowering learners worldwide with accessible, high-quality education. Your future starts here.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook"></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"></a>
+          <a href="#" class="footer__social-link" aria-label="Instagram"></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Quick Links</h4>
+        <nav class="footer__links" aria-label="Footer quick links">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <h4 class="footer__heading">Courses</h4>
+        <nav class="footer__links" aria-label="Footer course links">
+          <a href="#">Web Development</a>
+          <a href="#">Data Science</a>
+          <a href="#">UI/UX Design</a>
+          <a href="#">Cybersecurity</a>
+        </nav>
+      </div>
+      <div>
+        <h4 class="footer__heading">Contact</h4>
+        <div class="footer__contact-item"><span>hello@academyhub.com</span></div>
+        <div class="footer__contact-item"><span>123 Education Ave, Learning City</span></div>
+        <div class="footer__contact-item"><span>+1 (555) 123-4567</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2024 AcademyHub. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>

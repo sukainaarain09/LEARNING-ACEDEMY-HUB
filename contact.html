@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academy Hub — Contact Us. Get in touch with our team.">
+  <meta name="theme-color" content="#0B3D2E">
+  <title>Academy Hub — Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header" role="banner">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo" aria-label="Academy Hub Home"><div class="header__logo-icon" aria-hidden="true">AH</div><span>AcademyHub</span></a>
+    <nav class="header__nav" aria-label="Main navigation">
+      <div class="header__nav-links">
+        <a href="index.html">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="header__actions"><a href="courses.html" class="btn btn--primary">Explore Courses</a></div>
+    </nav>
+    <button class="header__hamburger" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="header__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a>
+    <a href="courses.html" class="btn btn--primary">Explore Courses</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero" id="home">
+  <div class="container page-hero__inner">
+    <span class="page-hero__badge" aria-hidden="true"><span class="hero__badge-dot"></span>Contact AcademyHub</span>
+    <h1 class="page-hero__title">Get in <span>Touch</span></h1>
+    <p class="page-hero__description">Have questions or want to partner with us? Reach out — we'd love to hear from you.</p>
+  </div>
+</section>
+
+<!-- CONTACT FORM & INFO -->
+<section class="contact" id="contact" aria-label="Contact us">
+  <div class="container">
+    <div class="contact__inner">
+      <div class="contact__info reveal">
+        <h2 class="section-header__title">Let's Connect</h2>
+        <p class="contact__description">Whether you're a prospective student, an educator, or a business partner, we're here to help.</p>
+        <div class="contact__details">
+          <div class="contact__detail-item reveal">
+            <div class="contact__detail-icon" aria-hidden="true">📧</div>
+            <div>
+              <h4 class="contact__detail-title">Email</h4>
+              <a href="mailto:hello@academyhub.com" class="contact__detail-link">hello@academyhub.com</a>
+            </div>
+          </div>
+          <div class="contact__detail-item reveal reveal-delay-1">
+            <div class="contact__detail-icon" aria-hidden="true">📞</div>
+            <div>
+              <h4 class="contact__detail-title">Phone</h4>
+              <a href="tel:+15551234567" class="contact__detail-link">+1 (555) 123-4567</a>
+            </div>
+          </div>
+          <div class="contact__detail-item reveal reveal-delay-2">
+            <div class="contact__detail-icon" aria-hidden="true">📍</div>
+            <div>
+              <h4 class="contact__detail-title">Address</h4>
+              <p class="contact__detail-text">123 Education Ave, Learning City, LC 10001</p>
+            </div>
+          </div>
+          <div class="contact__detail-item reveal reveal-delay-3">
+            <div class="contact__detail-icon" aria-hidden="true">🕐</div>
+            <div>
+              <h4 class="contact__detail-title">Hours</h4>
+              <p class="contact__detail-text">Mon–Fri, 9:00 AM – 6:00 PM (UTC)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__form-wrapper reveal reveal-delay-1">
+        <form class="contact__form" id="contactForm" aria-label="Contact form">
+          <div class="contact__form-group">
+            <label for="contactName" class="contact__label">Your Name</label>
+            <input type="text" id="contactName" name="name" class="contact__input" placeholder="John Doe" required>
+          </div>
+          <div class="contact__form-group">
+            <label for="contactEmail" class="contact__label">Email Address</label>
+            <input type="email" id="contactEmail" name="email" class="contact__input" placeholder="john@example.com" required>
+          </div>
+          <div class="contact__form-group">
+            <label for="contactSubject" class="contact__label">Subject</label>
+            <select id="contactSubject" name="subject" class="contact__input contact__select">
+              <option value="">Select a topic</option>
+              <option value="general">General Inquiry</option>
+              <option value="courses">Course Information</option>
+              <option value="partnership">Partnership</option>
+              <option value="support">Technical Support</option>
+            </select>
+          </div>
+          <div class="contact__form-group">
+            <label for="contactMessage" class="contact__label">Message</label>
+            <textarea id="contactMessage" name="message" class="contact__input contact__textarea" rows="5" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="contact__form-success" id="formSuccess" aria-live="polite" style="display:none;">Thank you! Your message has been sent. We'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo"><div class="footer__logo-icon" aria-hidden="true">AH</div><span>AcademyHub</span></div>
+        <p class="footer__description">Empowering learners worldwide with accessible, high-quality education. Your future starts here.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook"></a><a href="#" class="footer__social-link" aria-label="Twitter"></a><a href="#" class="footer__social-link" aria-label="Instagram"></a><a href="#" class="footer__social-link" aria-label="LinkedIn"></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Quick Links</h4>
+        <nav class="footer__links" aria-label="Footer quick links">
+          <a href="index.html">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <h4 class="footer__heading">Courses</h4>
+        <nav class="footer__links" aria-label="Footer course links">
+          <a href="#">Web Development</a><a href="#">Data Science</a><a href="#">UI/UX Design</a><a href="#">Cybersecurity</a>
+        </nav>
+      </div>
+      <div>
+        <h4 class="footer__heading">Contact</h4>
+        <div class="footer__contact-item"><span>hello@academyhub.com</span></div>
+        <div class="footer__contact-item"><span>123 Education Ave, Learning City</span></div>
+        <div class="footer__contact-item"><span>+1 (555) 123-4567</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2024 AcademyHub. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>

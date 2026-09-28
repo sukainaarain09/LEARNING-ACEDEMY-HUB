@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academy Hub — Explore Our Courses. Find the perfect course for your career.">
+  <meta name="theme-color" content="#0B3D2E">
+  <title>Academy Hub — Explore Our Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER (Shared) -->
+<header class="header" id="header" role="banner">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo" aria-label="Academy Hub Home">
+      <div class="header__logo-icon" aria-hidden="true">AH</div><span>AcademyHub</span>
+    </a>
+    <nav class="header__nav" aria-label="Main navigation">
+      <div class="header__nav-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="header__actions">
+        <a href="courses.html" class="btn btn--primary">Explore Courses</a>
+      </div>
+    </nav>
+    <button class="header__hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="header__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="courses.html" class="active">Courses</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="courses.html" class="btn btn--primary">Explore Courses</a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero" id="home">
+  <div class="container page-hero__inner">
+    <span class="page-hero__badge" aria-hidden="true"><span class="hero__badge-dot"></span>24 Courses Available</span>
+    <h1 class="page-hero__title">Explore Our <span>Courses</span></h1>
+    <p class="page-hero__description">Find the perfect course to advance your career. Browse by category, level, or search by keyword.</p>
+  </div>
+</section>
+
+<!-- SEARCH & FILTERS -->
+<section class="filters" id="courses" aria-label="Course filters">
+  <div class="container">
+    <div class="filters__inner">
+      <div class="filters__search">
+        <svg class="filters__search-icon" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="search-input" class="filters__input" placeholder="Search courses by keyword..." aria-label="Search courses">
+      </div>
+      <div class="filters__groups">
+        <div class="filters__group">
+          <label for="category-filter" class="filters__label">Category</label>
+          <select id="category-filter" class="filters__select">
+            <option value="all">All Categories</option>
+            <option value="Development">Development</option>
+            <option value="Design">Design</option>
+            <option value="Business">Business</option>
+            <option value="Marketing">Marketing</option>
+          </select>
+        </div>
+        <div class="filters__group">
+          <label for="level-filter" class="filters__label">Level</label>
+          <select id="level-filter" class="filters__select">
+            <option value="all">All Levels</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="filters__tags" id="active-filters">
+      <span class="filters__tag">Showing <strong id="result-count">0</strong> courses</span>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE GRID -->
+<section class="courses" id="course-grid-section" aria-label="Course listings">
+  <div class="container">
+    <div class="courses__grid" id="course-grid">
+      <!-- Course cards rendered dynamically by JavaScript -->
+    </div>
+    <div class="courses__empty" id="courses-empty" style="display:none;" role="status">
+      <div class="courses__empty-icon" aria-hidden="true">🔍</div>
+      <h3 class="courses__empty-title">No courses found</h3>
+      <p class="courses__empty-text">Try adjusting your search or filter criteria to find what you're looking for.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta" id="contact" aria-label="Call to action">
+  <div class="container cta__inner">
+    <h2 class="cta__title reveal">More Courses Coming Soon!</h2>
+    <p class="cta__description reveal reveal-delay-1">New courses are added regularly. Subscribe to our newsletter to stay updated on the latest course launches.</p>
+    <div class="cta__buttons reveal reveal-delay-2">
+      <a href="courses.html" class="btn btn--primary">Browse All Courses</a>
+      <a href="#" class="btn btn--light">Subscribe to Newsletter</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (Shared) -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo"><div class="footer__logo-icon" aria-hidden="true">AH</div><span>AcademyHub</span></div>
+        <p class="footer__description">Empowering learners worldwide with accessible, high-quality education. Your future starts here.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook"></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"></a>
+          <a href="#" class="footer__social-link" aria-label="Instagram"></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Quick Links</h4>
+        <nav class="footer__links" aria-label="Footer quick links">
+          <a href="index.html">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <h4 class="footer__heading">Courses</h4>
+        <nav class="footer__links" aria-label="Footer course links">
+          <a href="#">Web Development</a><a href="#">Data Science</a><a href="#">UI/UX Design</a><a href="#">Cybersecurity</a>
+        </nav>
+      </div>
+      <div>
+        <h4 class="footer__heading">Contact</h4>
+        <div class="footer__contact-item"><span>hello@academyhub.com</span></div>
+        <div class="footer__contact-item"><span>123 Education Ave, Learning City</span></div>
+        <div class="footer__contact-item"><span>+1 (555) 123-4567</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2024 AcademyHub. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>
